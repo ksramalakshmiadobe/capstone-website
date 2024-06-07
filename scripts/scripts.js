@@ -15,6 +15,27 @@ import {
 
 const LCP_BLOCKS = []; // add your LCP blocks to the list
 
+function linkPicture(picture) {
+  const next = picture.parentNode.nextElementSibling;
+  if (next) {
+    const a = next.querySelector('a');
+    if (a && a.textContent.startsWith('https://')) {
+      a.innerHTML = '';
+      a.className = '';
+      a.appendChild(picture);
+    }
+  }
+}
+
+export default function decorateLinkedPictures(main) {
+  /* thanks to word online */
+  main.querySelectorAll('picture').forEach((picture) => {
+    if (!picture.closest('div.block')) {
+      linkPicture(picture);
+    }
+  });
+}
+
 /**
  * Builds hero block and prepends to main in a new section.
  * @param {Element} main The container element
