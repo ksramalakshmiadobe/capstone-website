@@ -12,8 +12,8 @@
 
 :root {
   /* colors */
-  --link-color: #035fe6;
-  --link-hover-color: #136ff6;
+  --link-color: #e6e603;
+  --link-hover-color: #e6e603;
   --background-color: white;
   --light-color: #eee;
   --dark-color: #ccc;
@@ -38,7 +38,7 @@
   --heading-font-size-xs: 18px;
 
   /* nav height */
-  --nav-height: 64px;
+  --nav-height: 20%;
 }
 
 @font-face {
@@ -137,7 +137,7 @@ a:any-link {
 }
 
 a:hover {
-  text-decoration: underline;
+  text-decoration: none;
   color: var(--link-hover-color);
 }
 
@@ -154,13 +154,12 @@ button {
   font-style: normal;
   font-weight: 600;
   cursor: pointer;
-  color: var(--background-color);
+  color: black;
   background-color: var(--link-color);
   margin: 16px 0;
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  border-radius: 30px;
 }
 
 a.button:hover,
@@ -180,8 +179,8 @@ button:disabled:hover {
 a.button.secondary,
 button.secondary {
   background-color: unset;
-  border: 2px solid currentcolor;
   color: var(--text-color);
+  font-size: var(--heading-font-size-s);
 }
 
 main img {
@@ -201,26 +200,45 @@ main img {
   width: 100%;
 }
 
-/* sections */
-main .section {
-  padding: 64px 16px;
-}
-
-@media (width >= 600px) {
-  main .section {
-    padding: 64px 32px;
-  }
-}
-
-@media (width >= 900px) {
-  .section > div {
-    max-width: 1200px;
-    margin: auto;
-  }
-}
-
 /* section metadata */
 main .section.light,
 main .section.highlight {
   background-color: var(--light-color);
+}
+
+/* nav */
+#nav {
+  text-align: center;
+  font-size: 1px;
+}
+
+#nav .nav-sections .default-content-wrapper > ul {
+  display: inline-flex;
+}
+
+#nav .nav-sections .default-content-wrapper > ul > li {
+  padding: 3%;
+}
+
+#nav .nav-sections .default-content-wrapper > ul > li:hover {
+  text-decoration: none;
+  background-color: var(--link-color);
+  color: var(--text-color);
+}
+
+/* featured articles */
+.featured-articles {
+  padding: 5% 5%;
+}
+
+.featured-articles #featured-articles {
+  margin: 0;
+}
+
+.featured-articles .columns-wrapper .columns div {
+  margin-bottom: 2%;
+}
+
+.featured-articles .columns-wrapper .columns {
+  
 }
