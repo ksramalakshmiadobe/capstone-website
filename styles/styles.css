@@ -75,6 +75,12 @@ body.appear {
 
 header {
   height: var(--nav-height);
+  padding: 1%;
+}
+
+header h1#wknd {
+  margin: 0;
+  font-size: var(--heading-font-size-l);
 }
 
 h1,
@@ -218,8 +224,7 @@ main .section.highlight {
 }
 
 #nav .nav-sections .default-content-wrapper > ul > li {
-  padding-left: 3%;
-  padding-right: 3%;
+  padding: 4%;
 }
 
 #nav .nav-sections .default-content-wrapper > ul > li:hover {
@@ -237,28 +242,51 @@ main .section.highlight {
   font-size: var(--body-font-size-xs);
 }
 
-/* featured articles */
-.featured-article {
-  padding: 5% 5%;
-  padding-top: 0;
-  padding-bottom: 0;
+/* featured articles & magazine hero */
+.featured-article, .magazine-hero {
+  margin: 5% 5%;
+  margin-top: 0;
+  margin-bottom: 2%;
+  padding: 3%;
+  padding-left: 0;
+  background-color: lightgray;
+  display: flex;
 }
 
-.featured-article p {
+.featured-article h3, .magazine-hero h3 {
+  font-size: var(--heading-font-size-m);
+  margin: 0;
+}
+
+.featured-article h4, .magazine-hero h4 {
+  font-size: var(--heading-font-size-xs);
+  margin-bottom: 2%;
+  font-style: italic;
+  font-weight: lighter;
+}
+
+.featured-article p, .magazine-hero p {
   font-size: var(--body-font-size-xs);
 }
 
-/* recent articles */
-.recent-articles {
-  padding: 2% 2%;
+.featured-article .default-content-wrapper p picture img, .magazine-hero .default-content-wrapper p picture img {
+  display: flex;
+  float: left;
+  margin-right: 4%;
 }
 
-.recent-articles h3#recent-articles {
+/* recent articles & all articles & members only */
+.recent-articles, .all-articles, .members-only {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+.recent-articles h3#recent-articles, .all-articles h3#all-articles {
   padding-bottom: 2%;
   margin: 0;
 }
 
-.recent-articles a.button {
+.recent-articles a.button, .all-articles a.button {
   background-color: white;
   padding: 0;
   margin: 0;
@@ -267,12 +295,12 @@ main .section.highlight {
   font-size: var(--body-font-size-s);
 }
 
-.recent-articles p {
+.recent-articles p, .all-articles p {
   margin: 0;
   font-size: var(--body-font-size-xs);
 }
 
-.recent-articles p.button-container:last-child a {
+.recent-articles p.button-container:last-child a, .all-articles p.button-container:last-child a {
   background-color: var(--link-color);
   width: fit-content;
   padding: 5px 30px;
@@ -281,7 +309,9 @@ main .section.highlight {
 
 /* next adventures */
 .next-adventures h3#next-adventures {
-  padding: 2% 2%;
+  padding-bottom: 2%;
+  padding-left: 5%;
+  padding-right: 5%;
   margin: 0;
 }
 
@@ -295,7 +325,8 @@ main .section.highlight {
 
 /* where to go next section */
 .activities {
-  padding: 2% 2%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .activities h3 {
@@ -327,4 +358,42 @@ main .section.highlight {
 /* horizontal breaks */
 body hr {
   margin-top: 2%;
+  margin-bottom: 3%;
+}
+
+/* members only section - magazine */
+body h1#magazine {
+  font-size: var(--heading-font-size-m);
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 2%;
+}
+
+.members-only {
+  margin-bottom: 5%;
+}
+
+.members-only h3#members-only {
+  margin: 0;
+}
+
+.members-only .default-content-wrapper p {
+  font-size:  var(--body-font-size-s);
+}
+
+.members-only .columns-wrapper .columns {
+  display: flex;
+}
+
+.members-only .columns-wrapper .columns div div p strong {
+  font-size: var(--body-font-size-m);
+}
+.members-only .columns-wrapper .columns div div p{
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+.members-only p.button-container a {
+  padding-left: 1.5%;
+  padding-right: 1.5%;
 }

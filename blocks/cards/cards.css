@@ -16,6 +16,12 @@
   margin: 16px;
 }
 
+.cards .cards-card-body p{
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 .cards .cards-card-image {
   line-height: 0;
 }

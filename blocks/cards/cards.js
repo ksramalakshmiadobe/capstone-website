@@ -1,5 +1,15 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
+let pEles = document.querySelectorAll('.cards-container .cards-wrapper .cards .cards-card-body p:last-child');
+
+function expandOnClick(element) {
+  element.classList.toggle("expanded");
+}
+
+Array.from(pEles).forEach((item) => {
+  item.setAttribute("onClick", "expandOnClick(this)");
+});
+
 export default function decorate(block) {
   /* change to ul, li */
   const ul = document.createElement('ul');
