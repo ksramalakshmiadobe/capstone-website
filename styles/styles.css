@@ -212,12 +212,14 @@ main .section.highlight {
   font-size: 1px;
 }
 
-#nav .nav-sections .default-content-wrapper > ul {
+#nav .nav-sections .default-content-wrapper {
   display: inline-flex;
+  width: fit-content;
 }
 
 #nav .nav-sections .default-content-wrapper > ul > li {
-  padding: 3%;
+  padding-left: 3%;
+  padding-right: 3%;
 }
 
 #nav .nav-sections .default-content-wrapper > ul > li:hover {
@@ -226,19 +228,103 @@ main .section.highlight {
   color: var(--text-color);
 }
 
-/* featured articles */
-.featured-articles {
-  padding: 5% 5%;
-}
-
-.featured-articles #featured-articles {
+/* wknd-hero */
+.wknd-hero .carousel-wrapper .carousel-slide-content h2 {
   margin: 0;
 }
 
-.featured-articles .columns-wrapper .columns div {
-  margin-bottom: 2%;
+.wknd-hero .carousel-wrapper .carousel-slide-content p {
+  font-size: var(--body-font-size-xs);
 }
 
-.featured-articles .columns-wrapper .columns {
-  
+/* featured articles */
+.featured-article {
+  padding: 5% 5%;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+.featured-article p {
+  font-size: var(--body-font-size-xs);
+}
+
+/* recent articles */
+.recent-articles {
+  padding: 2% 2%;
+}
+
+.recent-articles h3#recent-articles {
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+.recent-articles a.button {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  text-wrap: wrap;
+  text-align: left;
+  font-size: var(--body-font-size-s);
+}
+
+.recent-articles p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+.recent-articles p.button-container:last-child a {
+  background-color: var(--link-color);
+  width: fit-content;
+  padding: 5px 30px;
+  margin-top: 3%;
+}
+
+/* next adventures */
+.next-adventures h3#next-adventures {
+  padding: 2% 2%;
+  margin: 0;
+}
+
+.next-adventures .carousel-wrapper .carousel-slide-content h2 {
+  margin: 0;
+}
+
+.next-adventures .carousel-wrapper .carousel-slide-content p {
+  font-size: var(--body-font-size-xs);
+}
+
+/* where to go next section */
+.activities {
+  padding: 2% 2%;
+}
+
+.activities h3 {
+  padding-bottom: 2%;
+  margin: 0;
+}
+
+.activities a.button {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  text-wrap: wrap;
+  text-align: left;
+  font-size: var(--body-font-size-s);
+}
+
+.activities p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+}
+
+.activities p.button-container:last-child a {
+  background-color: var(--link-color);
+  width: fit-content;
+  padding: 5px 30px;
+  margin-top: 3%;
+}
+
+/* horizontal breaks */
+body hr {
+  margin-top: 2%;
 }

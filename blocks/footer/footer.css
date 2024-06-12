@@ -1,14 +1,42 @@
 footer {
   padding: 2rem;
-  background-color: var(--light-color);
-  font-size: var(--body-font-size-s);
+  background-color: black;
+  color: white;
+  font-size: 12px;
 }
 
 footer .footer {
   max-width: 1200px;
-  margin: auto;
+  margin-left: 3%;
+  margin-right: 3%;
+}
+
+footer .footer h1#wknd {
+  width: fit-content;
+  margin: 0;
+  display: inline;
 }
 
 footer .footer p {
-  margin: 0;
+  width: fit-content;
+}
+
+footer .footer .default-content-wrapper ul {
+  list-style: none;
+  padding: 0;
+  width: fit-content;
+  display: inline;
+  float: right;
+  margin-top: 1.3rem;
+  margin-bottom: 1.3rem;
+}
+
+footer .footer .default-content-wrapper ul li {
+  display: inline;
+  margin-right: 10px;
+  font-size: var(--body-font-size-xs);
+}
+
+footer .footer a {
+  color: white;
 }

@@ -154,3 +154,12 @@ async function loadPage() {
 }
 
 loadPage();
+
+const ele = document.getElementsByClassName('cards-container');
+console.log(ele);
+
+Array.from(ele).forEach((item) => {
+  let brEle = document.createElement("hr");
+  item.appendChild(brEle);
+  return;
+})
