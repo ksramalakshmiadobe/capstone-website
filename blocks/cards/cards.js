@@ -1,14 +1,18 @@
 import { createOptimizedPicture } from '../../scripts/aem.js';
 
-let pEles = document.querySelectorAll('.cards-container .cards-wrapper .cards .cards-card-body p:last-child');
+// let pEles = document.querySelectorAll(".cards .cards-card-body p:last-child");
 
-function expandOnClick(element) {
-  element.classList.toggle("expanded");
-}
+// pEles.forEach((item) => {
+//   item.classList.add("expandable-text");
+// });
 
-Array.from(pEles).forEach((item) => {
-  item.setAttribute("onClick", "expandOnClick(this)");
-});
+// document.addEventListener("DOMContentLoaded", function() {
+//   let expandableText = document.querySelectorAll('.expandable-text');
+
+//   expandableText.addEventListener("click", function() {
+//     this.classList.toggle("expanded");
+//   });
+// });
 
 export default function decorate(block) {
   /* change to ul, li */

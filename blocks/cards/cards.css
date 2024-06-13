@@ -16,12 +16,6 @@
   margin: 16px;
 }
 
-.cards .cards-card-body p{
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 .cards .cards-card-image {
   line-height: 0;
 }
@@ -35,3 +29,14 @@
   aspect-ratio: 4 / 3;
   object-fit: cover;
 }
+
+/* .cards .cards-card-body p:last-child {
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  transition: max-height 0.5s ease;
+}
+
+.cards .cards-card-body p:last-child:hover {
+  cursor: pointer;
+} */
