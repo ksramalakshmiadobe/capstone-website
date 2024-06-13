@@ -438,3 +438,26 @@ body h1#about-us {
 .guides {
   padding: 5%;
 }
+
+/* registrations page */
+.registrations-container {
+  padding: 5%;
+  padding-top: 0;
+  margin: 0;
+}
+
+.registrations-container h3#registration-details {
+  font-size: var(--body-font-size-m);
+}
+
+.registrations-container .registrations-wrapper .registrations form .field-wrapper {
+  flex-direction: row-reverse;
+  display: flex;
+  float: left;
+  width: 100%;
+}
+
+/* footer */
+.footer .footer-wrapper {
+  display: flex;
+}

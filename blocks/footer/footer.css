@@ -40,3 +40,8 @@ footer .footer .default-content-wrapper ul li {
 footer .footer a {
   color: white;
 }
+
+footer .footer-wrapper {
+  display: flex;
+  flex-direction: column;
+}
