@@ -497,6 +497,7 @@ body h1#about-us {
   font-style: italic;
   font-size: var(--body-font-size-xs);
 }
+
 /* footer */
 .footer .footer-wrapper {
   display: flex;
