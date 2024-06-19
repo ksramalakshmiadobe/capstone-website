@@ -1,0 +1,21 @@
+indices:
+  mysite:
+    include:
+      - /documents/**
+    exclude:
+      - /documents/snippets/**
+    target: /query-index.json
+    properties:
+      author:
+        select: main > div:nth-of-type(3) > p:nth-of-type(1)
+        value: |
+          match(el, 'by (.*)')
+  articles:
+    include:
+      - /magazines/**
+    target: /articles-index.json
+    properties:
+      author:
+        select: main > div:nth-of-type(3) > p:nth-of-type(1)
+        value: |
+          match(el, 'by (.*)')

@@ -18,7 +18,7 @@
         text-align: center;
     }
 
-    p picture img {
+    picture img, p picture img {
         width: 100%;
     }
 }
