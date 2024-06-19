@@ -247,8 +247,6 @@ main .section.highlight {
   margin: 5% 5%;
   margin-top: 0;
   margin-bottom: 2%;
-  padding: 3%;
-  padding-left: 0;
   background-color: lightgray;
   display: flex;
 }
@@ -267,6 +265,7 @@ main .section.highlight {
 
 .featured-article p, .magazine-hero p {
   font-size: var(--body-font-size-xs);
+  margin: 0;
 }
 
 .featured-article .default-content-wrapper p picture img, .magazine-hero .default-content-wrapper p picture img {
