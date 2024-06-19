@@ -444,19 +444,59 @@ body h1#about-us {
   padding: 5%;
   padding-top: 0;
   margin: 0;
+  height: 200px;
 }
 
 .registrations-container h3#registration-details {
   font-size: var(--body-font-size-m);
 }
 
+.registrations-container .registrations-wrapper .registrations form {
+  font-size: 17px;
+  display: grid;
+}
+
 .registrations-container .registrations-wrapper .registrations form .field-wrapper {
   flex-direction: row-reverse;
   display: flex;
   float: left;
+  width: 30rem;
+}
+
+.registrations-container .registrations-wrapper .registrations form .field-wrapper input, 
+.registrations-container .registrations-wrapper .registrations form .field-wrapper select
+{
+  margin: 5px;
   width: 100%;
 }
 
+.registrations-container .registrations-wrapper .registrations form .field-wrapper label {
+  width: 8rem;
+}
+.registrations-container .registrations-wrapper .registrations form .submit-wrapper button {
+  margin: 0;
+  margin-top: 10px;
+}
+
+/* thank you page */
+.confirmation {
+  padding: 5%;
+}
+
+.confirmation h3#thank-you-for-registering {
+  margin: 0;
+}
+
+.confirmation .default-content-wrapper p {
+  font-size: var(--body-font-size-s);
+}
+
+.confirmation .default-content-wrapper .button-container a.button {
+  margin: 0;
+  padding: 0;
+  font-style: italic;
+  font-size: var(--body-font-size-xs);
+}
 /* footer */
 .footer .footer-wrapper {
   display: flex;
