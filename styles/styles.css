@@ -22,7 +22,8 @@
   /* fonts */
   --body-font-family: roboto, roboto-fallback;
   --heading-font-family: var(--body-font-family);
-  --fixed-font-family: 'Roboto Mono', menlo, consolas, 'Liberation Mono', monospace;
+  --fixed-font-family: "Roboto Mono", menlo, consolas, "Liberation Mono",
+    monospace;
 
   /* body sizes */
   --body-font-size-m: 22px;
@@ -45,7 +46,7 @@
   font-family: roboto-fallback;
   size-adjust: 100.06%;
   ascent-override: 95%;
-  src: local('Arial');
+  src: local("Arial");
 }
 
 @media (width >= 900px) {
@@ -97,12 +98,24 @@ h6 {
   scroll-margin: calc(var(--nav-height) + 1em);
 }
 
-h1 { font-size: var(--heading-font-size-xxl); }
-h2 { font-size: var(--heading-font-size-xl); }
-h3 { font-size: var(--heading-font-size-l); }
-h4 { font-size: var(--heading-font-size-m); }
-h5 { font-size: var(--heading-font-size-s); }
-h6 { font-size: var(--heading-font-size-xs); }
+h1 {
+  font-size: var(--heading-font-size-xxl);
+}
+h2 {
+  font-size: var(--heading-font-size-xl);
+}
+h3 {
+  font-size: var(--heading-font-size-l);
+}
+h4 {
+  font-size: var(--heading-font-size-m);
+}
+h5 {
+  font-size: var(--heading-font-size-s);
+}
+h6 {
+  font-size: var(--heading-font-size-xs);
+}
 
 p,
 dl,
@@ -189,12 +202,6 @@ button.secondary {
   font-size: var(--heading-font-size-s);
 }
 
-main img {
-  max-width: 100%;
-  width: auto;
-  height: auto;
-}
-
 .icon {
   display: inline-block;
   height: 24px;
@@ -234,17 +241,22 @@ main .section.highlight {
 }
 
 /* recent articles & all articles & members only */
-.recent-articles, .all-articles, .members-only {
+.recent-articles,
+.all-articles,
+.members-only {
   padding-left: 5%;
   padding-right: 5%;
+  margin-bottom: 5%;
 }
 
-.recent-articles h3#recent-articles, .all-articles h3#all-articles {
+.recent-articles h3#recent-articles,
+.all-articles h3#all-articles {
   padding-bottom: 2%;
   margin: 0;
 }
 
-.recent-articles a.button, .all-articles a.button {
+.recent-articles a.button,
+.all-articles a.button {
   background-color: white;
   padding: 0;
   margin: 0;
@@ -253,12 +265,14 @@ main .section.highlight {
   font-size: var(--body-font-size-s);
 }
 
-.recent-articles p, .all-articles p {
+.recent-articles p,
+.all-articles p {
   margin: 0;
   font-size: var(--body-font-size-xs);
 }
 
-.recent-articles p.button-container:last-child a, .all-articles p.button-container:last-child a {
+.recent-articles p.button-container:last-child a,
+.all-articles p.button-container:last-child a {
   background-color: var(--link-color);
   width: fit-content;
   padding: 5px 30px;
@@ -266,6 +280,10 @@ main .section.highlight {
 }
 
 /* next adventures */
+.next-adventures {
+  margin-top: 5%;
+}
+
 .next-adventures h3#next-adventures {
   padding-bottom: 2%;
   padding-left: 5%;
@@ -285,6 +303,8 @@ main .section.highlight {
 .activities {
   padding-left: 5%;
   padding-right: 5%;
+  margin-top: 5%;
+  margin-bottom: 5%;
 }
 
 .activities h3 {
@@ -336,7 +356,7 @@ body h1#magazine {
 }
 
 .members-only .default-content-wrapper p {
-  font-size:  var(--body-font-size-s);
+  font-size: var(--body-font-size-s);
 }
 
 .members-only .columns-wrapper .columns {
@@ -346,7 +366,7 @@ body h1#magazine {
 .members-only .columns-wrapper .columns div div p strong {
   font-size: var(--body-font-size-m);
 }
-.members-only .columns-wrapper .columns div div p{
+.members-only .columns-wrapper .columns div div p {
   margin: 0;
   font-size: var(--body-font-size-xs);
 }
@@ -369,28 +389,14 @@ body h1#about-us {
   padding-right: 5%;
 }
 
-.contributors h4#our-contributors, .guides h4#wknd-guides {
+.contributors h4#our-contributors,
+.guides h4#wknd-guides {
   margin: 0;
 }
 
-.contributors .default-content-wrapper p, .guides .default-content-wrapper p {
-  font-size:  var(--body-font-size-s);
-}
-
-.guides .columns-wrapper .columns div {
-  text-align: center;
-  font-size: var(--body-font-size-xs);
-}
-
-.guides .columns-wrapper .columns div div p picture img {
-  border-radius: 100%;
-  width: 200px;
-  height: 200px;
-  margin: 3%;
-}
-
-.guides .columns-wrapper .columns div div p {
-  margin: 0;
+.contributors .default-content-wrapper p,
+.guides .default-content-wrapper p {
+  font-size: var(--body-font-size-s);
 }
 
 .guides {
@@ -400,6 +406,7 @@ body h1#about-us {
 /* thank you page */
 .confirmation {
   padding: 5%;
+  margin-bottom: 5%;
 }
 
 .confirmation h3#thank-you-for-registering {

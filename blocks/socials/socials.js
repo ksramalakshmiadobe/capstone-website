@@ -1,4 +1,4 @@
-import { decorateIcons, buildBlock } from "../../scripts/aem.js";
+import { decorateIcons } from '../../scripts/aem.js';
 
 export default function decorate(block) {
   const cols = [...block.firstElementChild.children];
