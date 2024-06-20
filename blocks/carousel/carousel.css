@@ -174,3 +174,11 @@
       --slide-content-width: auto;
     }
   }
+
+  .carousel-slides-container .carousel-slides .carousel-slide-content h2 {
+    margin: 0;
+  }
+
+  .carousel-slides-container .carousel-slides .carousel-slide-content p {
+    font-size: var(--body-font-size-xs);
+  }
