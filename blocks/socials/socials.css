@@ -40,6 +40,11 @@
   width: 60px;
 }
 
+.socials div div p.button-container .button {
+  border: 0;
+  padding: 5px 15px;
+}
+
 .socials div div p.button-container .button span img {
   vertical-align: bottom;
 }
