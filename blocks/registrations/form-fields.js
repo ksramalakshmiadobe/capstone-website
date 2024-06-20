@@ -66,6 +66,7 @@ const createPlaintext = (fd) => {
 const createSelect = async (fd) => {
   const select = document.createElement("select");
   setCommonAttributes(select, fd);
+  select.setAttribute("multiple", "true");
   const addOption = ({ text, value }) => {
     const option = document.createElement("option");
     option.text = text.trim();
