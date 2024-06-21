@@ -4,7 +4,7 @@ export default async function decorate(block) {
     console.log(response);
     let articleList = document.createElement('ul');
 
-    response.array.forEach(element => {
+    response.data.forEach(element => {
         let listItem = document.createElement('li');
         const innerDiv1 = document.createElement('div');
         innerDiv1.setAttribute("class", "articles-card-image");
@@ -52,10 +52,8 @@ export default async function decorate(block) {
         p2.textContent = element["description"];
         innerDiv2.appendChild(p2);
 
-        outerDiv.appendChild(innerDiv1);
-        outerDiv.appendChild(innerDiv2);
-
-        listItem.append(outerDiv);
+        listItem.append(innerDiv1);
+        listItem.append(innerDiv2);
         articleList.appendChild(listItem);
     });
     block.append(articleList);
