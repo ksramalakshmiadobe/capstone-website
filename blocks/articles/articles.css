@@ -1,65 +1,65 @@
 .articles-container {
-    padding-left: 5%;
-    padding-right: 5%;
-    margin-bottom: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
+  margin-bottom: 5%;
 }
 
 .articles-container h3 {
-    padding-bottom: 2%;
-    margin: 0;
+  padding-bottom: 2%;
+  margin: 0;
 }
 
 .articles > ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
-    grid-gap: 16px;
-  }
-  
-  .articles > ul > li {
-    border: 1px solid var(--dark-color);
-    background-color: var(--background-color);
-  }
-  
-  .articles .articles-card-body {
-    margin: 16px;
-  }
-  
-  .articles .articles-card-image {
-    line-height: 0;
-  }
-  
-  .articles .articles-card-body > *:first-child {
-    margin-top: 0;
-  }
-  
-  .articles a {
-    background-color: white;
-    padding: 0;
-    margin: 0;
-    text-wrap: wrap;
-    text-align: left;
-    font-size: var(--body-font-size-s);
-    color: black;
-    font-weight: bold;
-    margin-bottom: 1%;
-  }
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(278px, 1fr));
+  grid-gap: 16px;
+}
 
-  .articles p {
-    margin: 0;
-    font-size: var(--body-font-size-xs);
-    margin-bottom: 2%;
-  }
+.articles > ul > li {
+  border: 1px solid var(--dark-color);
+  background-color: var(--background-color);
+}
 
-  .articles > ul > li img {
-    width: 100%;
-    aspect-ratio: 4 / 3;
-    object-fit: cover;
-  }
-  
-  /* .articles .articles-card-body p:last-child {
+.articles .articles-card-body {
+  margin: 16px;
+}
+
+.articles .articles-card-image {
+  line-height: 0;
+}
+
+.articles .articles-card-body > *:first-child {
+  margin-top: 0;
+}
+
+.articles a {
+  background-color: white;
+  padding: 0;
+  margin: 0;
+  text-wrap: wrap;
+  text-align: left;
+  font-size: var(--body-font-size-s);
+  color: black;
+  font-weight: bold;
+  margin-bottom: 1%;
+}
+
+.articles p {
+  margin: 0;
+  font-size: var(--body-font-size-xs);
+  margin-bottom: 2%;
+}
+
+.articles > ul > li img {
+  width: 100%;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+}
+
+/* .articles .articles-card-body p:last-child {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
@@ -69,4 +69,3 @@
   .articles .articles-card-body p:last-child:hover {
     cursor: pointer;
   } */
-  
