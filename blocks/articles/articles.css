@@ -1,3 +1,14 @@
+.articles-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 5%;
+}
+
+.articles-container h3 {
+    padding-bottom: 2%;
+    margin: 0;
+}
+
 .articles > ul {
     list-style: none;
     margin: 0;
@@ -24,6 +35,24 @@
     margin-top: 0;
   }
   
+  .articles a {
+    background-color: white;
+    padding: 0;
+    margin: 0;
+    text-wrap: wrap;
+    text-align: left;
+    font-size: var(--body-font-size-s);
+    color: black;
+    font-weight: bold;
+    margin-bottom: 1%;
+  }
+
+  .articles p {
+    margin: 0;
+    font-size: var(--body-font-size-xs);
+    margin-bottom: 2%;
+  }
+
   .articles > ul > li img {
     width: 100%;
     aspect-ratio: 4 / 3;

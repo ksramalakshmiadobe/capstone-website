@@ -242,21 +242,18 @@ main .section.highlight {
 
 /* recent articles & all articles & members only */
 .recent-articles,
-.all-articles,
 .members-only {
   padding-left: 5%;
   padding-right: 5%;
   margin-bottom: 5%;
 }
 
-.recent-articles h3#recent-articles,
-.all-articles h3#all-articles {
+.recent-articles h3#recent-articles{
   padding-bottom: 2%;
   margin: 0;
 }
 
-.recent-articles a.button,
-.all-articles a.button {
+.recent-articles a.button {
   background-color: white;
   padding: 0;
   margin: 0;
@@ -265,14 +262,12 @@ main .section.highlight {
   font-size: var(--body-font-size-s);
 }
 
-.recent-articles p,
-.all-articles p {
+.recent-articles p {
   margin: 0;
   font-size: var(--body-font-size-xs);
 }
 
-.recent-articles p.button-container:last-child a,
-.all-articles p.button-container:last-child a {
+.recent-articles p.button-container:last-child a {
   background-color: var(--link-color);
   width: fit-content;
   padding: 5px 30px;
